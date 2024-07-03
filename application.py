@@ -7,7 +7,8 @@ from sklearn.preprocessing import StandardScaler
 
 
 
-app = Flask(__name__)
+application = Flask(__name__)
+app= application
 
 # import linear_regression model and Standard scaler pickle
 linear_reg= pickle.load(open('models/linreg.pkl','rb'))
